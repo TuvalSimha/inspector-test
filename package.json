@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "diff": "graphql-inspector diff example/schemas/schema.graphql example/schemas/new.graphql",
+    "diff": "graphql-inspector diff schema.graphql example/schemas/new.graphql",
     "coverage": "graphql-inspector coverage example/documents/post.graphql example/schemas/new.graphql",
     "audit": "graphql-inspector audit 'example/documents/post.graphql'",
     "introspect": "graphql-inspector introspect 'example/schemas/schema.graphql' --write 'example/schemas/schema.json'",
