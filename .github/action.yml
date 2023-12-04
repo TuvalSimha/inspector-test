@@ -1,7 +1,10 @@
-name: GraphQL Inspector
-description: Test for Inspector
+name: CI
+description: Test
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   test:
@@ -10,8 +13,9 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
-      - uses: kamilkisiela/graphql-inspector@master
+      - name: Check GraphQL Schema
+        uses: kamilkisiela/graphql-inspector@main
         with:
-          schema: "master:schema.graphql"
+          schema: "main:schema.graphql"
