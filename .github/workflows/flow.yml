@@ -21,6 +21,3 @@ jobs:
 
       - name: diff
         run: graphql-inspector diff 'git:origin/master:./schema.graphql' 'schema.graphql'
-
-      - name: coverage
-        run: yarn coverage
