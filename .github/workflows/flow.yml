@@ -1,0 +1,26 @@
+name: Inspector Flow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yarn
+        run: yarn install --frozen-lockfile
+
+      - name: diff
+        run: yarn diff
+
+      - name: coverage
+        run: yarn coverage
