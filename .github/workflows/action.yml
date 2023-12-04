@@ -1,5 +1,4 @@
 name: CI
-description: Test
 
 on:
   push:
@@ -16,6 +15,6 @@ jobs:
         uses: actions/checkout@main
 
       - name: Check GraphQL Schema
-        uses: kamilkisiela/graphql-inspector@main
+        uses: kamilkisiela/graphql-inspector@master
         with:
           schema: "main:schema.graphql"
