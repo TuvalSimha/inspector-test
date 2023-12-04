@@ -16,8 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install yarn
-        run: yarn install --frozen-lockfile
-
       - name: diff
-        run: yarn graphql-inspector diff 'master:schema.graphql' 'example/schemas/deep.graphql'
+        run: graphql-inspector diff 'master:schema.graphql' 'example/schemas/deep.graphql'
