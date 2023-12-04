@@ -1,0 +1,22 @@
+{
+  "name": "inspector-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "diff": "graphql-inspector diff example/schemas/schema.graphql example/schemas/new.graphql",
+    "coverage": "graphql-inspector coverage example/documents/post.graphql example/schemas/new.graphql",
+    "audit": "graphql-inspector audit 'example/documents/post.graphql'",
+    "introspect": "graphql-inspector introspect 'example/schemas/schema.graphql' --write 'example/schemas/schema.json'",
+    "serve": "graphql-inspector serve 'example/schemas/schema.graphql' --open",
+    "similar": "graphql-inspector similar example/schemas/deep.graphql",
+    "validate": "graphql-inspector validate example/documents/post.graphql example/schemas/schema.graphql"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-inspector/cli": "^4.0.3",
+    "graphql": "^16.8.1"
+  }
+}

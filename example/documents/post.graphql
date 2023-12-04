@@ -1,0 +1,9 @@
+query post {
+  post {
+    ... on Post {
+      id
+      title
+    }
+    createdAtSomePoint
+  }
+}
