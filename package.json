@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@graphql-inspector/cli": "^4.0.3",
+    "@graphql-inspector/ci": "4.0.3",
     "graphql": "^16.8.1"
   }
 }
