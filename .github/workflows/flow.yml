@@ -20,4 +20,4 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: diff
-        run: graphql-inspector diff 'git:origin/master:./schema.graphql' 'schema.graphql'
+        run: yarn graphql-inspector diff 'git:origin/master:./schema.graphql' 'schema.graphql'
