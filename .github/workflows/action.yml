@@ -1,9 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   test:
@@ -12,9 +9,8 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@master
 
-      - name: Check GraphQL Schema
-        uses: kamilkisiela/graphql-inspector@master
+      - uses: kamilkisiela/graphql-inspector@master
         with:
-          schema: "main:schema.graphql"
+          schema: "master:schema.graphql"
