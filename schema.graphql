@@ -6,7 +6,6 @@ type Post {
   """
   Date of Creation in ISO
   """
-  createdAt: String
   why: String
 }
 
