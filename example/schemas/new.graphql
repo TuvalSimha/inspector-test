@@ -9,4 +9,5 @@ type Post {
 
 type Query {
   post: Post!
+  test: String
 }

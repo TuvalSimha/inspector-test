@@ -8,6 +8,7 @@ type Post {
 type User {
   id: ID!
   name: String!
+  test: String!
 }
 
 type Query {
