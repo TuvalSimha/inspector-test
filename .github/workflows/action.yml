@@ -1,4 +1,4 @@
-name: CI
+name: GraphQL Inspector
 
 on: [push]
 
@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - uses: kamilkisiela/graphql-inspector@master
         with:
