@@ -17,4 +17,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: diff
-        run: graphql-inspector diff 'master:schema.graphql' 'example/schemas/deep.graphql'
+        run: yarn diff
