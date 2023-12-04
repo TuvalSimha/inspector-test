@@ -7,8 +7,7 @@ type Post {
   Date of Creation in ISO
   """
   createdAt: String
-  modifiedAt: String
-  test: String
+  why: String
 }
 
 type Query {
