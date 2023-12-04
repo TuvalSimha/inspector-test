@@ -8,7 +8,6 @@ type Post {
   """
   createdAt: String
   modifiedAt: String
-  test: String
 }
 
 type Query {
