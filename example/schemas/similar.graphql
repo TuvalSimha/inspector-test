@@ -9,11 +9,13 @@ type BlogPost {
   title: String
   createdAt: String
   id: ID
+  test: String
 }
 
 type MailPost {
   title: String
   createdAt: String
+  test: String
 }
 
 type EmailPost {
